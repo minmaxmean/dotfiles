@@ -7,9 +7,7 @@ return {
 		"nvim-lua/plenary.nvim",
 		{
 			"nvim-telescope/telescope-fzf-native.nvim",
-
 			build = "make",
-
 			cond = function()
 				return vim.fn.executable("make") == 1
 			end,
@@ -18,13 +16,6 @@ return {
 
 		-- Useful for getting pretty icons, but requires a Nerd Font.
 		{ "nvim-tree/nvim-web-devicons", enabled = vim.g.have_nerd_font },
-		{
-			"jq",
-			dir = "~/projects/nvim/telescope-jq.nvim/",
-			config = function()
-				require("telescope").load_extension("jq")
-			end,
-		},
 	},
 	config = function()
 		require("telescope").setup({

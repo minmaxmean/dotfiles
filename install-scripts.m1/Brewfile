@@ -1,10 +1,7 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
-
 brew "aria2"
 brew "fzf"
 brew "git"
+brew "go"
 brew "htop"
 brew "httpie"
 brew "jq"
@@ -17,9 +14,12 @@ brew "tmux"
 brew "tree"
 brew "zsh"
 cask "docker"
+cask "google-chrome"
+cask "iterm2"
 cask "miniconda"
+cask "rectangle"
 cask "spotify"
+cask "unnaturalscrollwheels"
 cask "visual-studio-code"
-
 mas "NordVPN", id: 905953485
 mas "Telegram", id: 747648890
