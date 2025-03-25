@@ -2756,6 +2756,8 @@
 			<string>/Users/manny</string>
 		</dict>
 	</array>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
@@ -2797,8 +2799,10 @@
 	</dict>
 	<key>Print In Black And White</key>
 	<true/>
-	<key>ShowFullScreenTabBar</key>
+	<key>PromptOnQuit</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>TmuxUsesDedicatedProfile</key>

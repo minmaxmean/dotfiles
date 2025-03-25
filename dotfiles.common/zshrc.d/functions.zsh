@@ -10,4 +10,7 @@ function load_dotenv() {
   fi
 }
 
-tcc() { tmux -CC new-session -A -s main; }
+twork() {
+  tmux -CC new-session -A -s ${1:-main}
+}
+
