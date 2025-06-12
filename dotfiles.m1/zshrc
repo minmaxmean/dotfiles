@@ -28,8 +28,6 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='nvim'
 
-export TERMINAL=kitty
-
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 #  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
@@ -39,30 +37,10 @@ source $HOME/.zshrc.d/alises.zsh
 source $HOME/.zshrc.d/functions.zsh
 source $HOME/.zshrc.d/plugins.zsh
 
-if type yarn > /dev/null; then
-  export PATH="$(yarn global bin):$PATH"
-fi
-
-#eval $(keychain --eval --quiet id_ed25519)
-
-# The next line updates PATH for Yandex Cloud CLI.
-if [ -f '/home/m-nny/yandex-cloud/path.bash.inc' ]; then source '/home/m-nny/yandex-cloud/path.bash.inc'; fi
-
-# The next line enables shell command completion for yc.
-if [ -f '/home/m-nny/yandex-cloud/completion.zsh.inc' ]; then source '/home/m-nny/yandex-cloud/completion.zsh.inc'; fi
-if [ -f '/opt/google-cloud-sdk/completion.zsh.inc' ]; then source '/opt/google-cloud-sdk/completion.zsh.inc'; fi
-
-
-if [ -f '/home/m-nny/.local/bin/terraform' ]; then complete -o nospace -C /home/m-nny/.local/bin/terraform terraform; fi
-
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 export PATH="$PATH:$(go env GOPATH)/bin"
-
 export PATH="$PATH:$HOME/.local/bin"
+
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -78,4 +56,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
